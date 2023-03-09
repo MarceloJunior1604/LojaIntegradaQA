@@ -43,7 +43,7 @@ describe('Implementação Cupom', () => {
       cy.get(':nth-child(1) > ul > :nth-child(4) > .listagem-item > .produto-sobrepor').click()
       cy.get('.input-small').type('58062135')
       cy.get('div.principal > .acoes-produto > .comprar > .botao').click()
-     
+     ///dadsasdadads
   })
 
   
