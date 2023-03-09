@@ -1,0 +1,45 @@
+name: Regressivo - PR
+
+on: 
+  pull_request:
+    branches: [master]
+
+jobs:
+ regressivo:
+   runs-on: ubuntu-latest
+   steps:
+      - name: Checkout GitCode
+        uses: actions/checkout@v2
+
+      - name: Run Regressivo
+        uses: cypress-io/github-action@v4
+        with:
+          command: npx cypress run
+          browser: chrome
+
+
+      - name: Slack notification - Success
+        uses: rtCamp/action-slack-notify@v2
+        if: ${{ success() }}
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: test-report
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: https://www.clipartmax.com/png/middle/179-1795386_patient-success-success-icon-png.png
+          SLACK_MESSAGE: 'Testes durante abertura de PR executados com Sucesso! :white_check_mark:'
+          SLACK_TITLE: 'Testes durante abertura de PR executados com Sucesso! :white_check_mark:'
+          SLACK_USERNAME: SUCESSO
+
+      - name: Slack notification - Falha
+        uses: rtCamp/action-slack-notify@v2
+        if: ${{ failure() }}
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: test-report
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: https://www.vhv.rs/dpng/d/431-4316378_error-icon-hope-for-justice-logo-hd-png.png
+          SLACK_MESSAGE: 'Testes durante abertura de PR executados com Falhas! :fire:'
+          SLACK_TITLE: 'Testes durante abertura de PR executados com Falhas! :fire:'
+          SLACK_USERNAME: FALHA
+
+    
