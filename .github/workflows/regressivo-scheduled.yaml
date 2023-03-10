@@ -1,8 +1,8 @@
-name: Regressivo - PR
+name: Regressivo - Scheduled
 
-on: 
-  pull_request:
-    branches: [master]
+on:
+  schedule:
+    - cron: "*/60 * * * 1-5"
 
 jobs:
  regressivo:
