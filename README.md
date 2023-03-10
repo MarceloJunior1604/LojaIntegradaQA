@@ -18,4 +18,4 @@ Objetivo desse teste é validar se ao remover o cupom do carrinho o fluxo de fin
 
 # Como conifgurar e executar o projeto
  Para o projeto ser executado é necessário que o Node e o Cypress estejam instalado
- - Como instalar o Node [link](https://nodejs.org/en/)
+ - Para instalar o Node basta acessar o [link](https://nodejs.org/en/) fazer o Download da versão LTS e fazer a instalação, para verificar se o Node foi instalado corretamente execute o comando Node -v, com isso deve exibir a versão do Node
