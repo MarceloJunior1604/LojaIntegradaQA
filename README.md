@@ -16,5 +16,6 @@ Objetivo desse teste é validação de cupom inválido está funcionando correta
 - Validar Fluxo do carrinho ao remover o cupom de quando já houver produtos no carrinho
 Objetivo desse teste é validar se ao remover o cupom do carrinho o fluxo de finalização da compra não é afetado
 
-# Como executar o projeto
- Para o projeto ser executado é necessário que o Node e o Cypress estejam instalado, após a instalação de ambos basta executar o comando "npm install" e em seguida "npx cypress open".
+# Como conifgurar e executar o projeto
+ Para o projeto ser executado é necessário que o Node e o Cypress estejam instalado
+ - Como instalar o Node [[Link text Here](https://nodejs.org/en/)](https://link-url-here.org)
