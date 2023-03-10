@@ -18,6 +18,6 @@ Objetivo desse teste é validar se ao remover o cupom do carrinho o fluxo de fin
 
 # Como conifgurar e executar o projeto
  Para o projeto ser executado é necessário que o Node e o Cypress estejam instalado
- - Para instalar o Node basta acessar o [link](https://nodejs.org/en/), fazer o Download da versão LTS e fazer a instalação, para verificar se o Node foi instalado corretamente execute o comando Node -v, com isso deve exibir a versão do Node
- - Clonar o projeto da Branch Master
- - Na pasta raiz executar o comando "npm install" para seja instalado todas as dependências e em seguinda execute o comando "npx cypress open" para que os testes sejam executados  
+ - Para instalar o Node basta acessar o [link](https://nodejs.org/en/), fazer o Download da versão LTS e fazer a instalação. Para verificar se o Node foi instalado corretamente execute o comando node -v, com isso deve exibir a versão do Node que foi instalado.
+ - Clonar o projeto da Branch Master com o "git clone https://github.com/MarceloJunior1604/LojaIntegradaQA.git"
+ - Na pasta raiz execute o comando "npm install" para seja instalado todas as dependências e em seguinda execute o comando "npx cypress open" para que os testes sejam executados.
