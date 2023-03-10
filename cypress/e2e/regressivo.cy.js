@@ -133,7 +133,7 @@ describe('Implementação Cupom', () => {
     cy.get(':nth-child(2) > .row-fluid > :nth-child(3) > .listagem-item > .produto-sobrepor').click()
     cy.get('.input-small').type('58062135')
     cy.get('div.principal > .acoes-produto > .comprar > .botao').click()
-    // Marcando a opção de entrega
+    // Marcando a opção de entregaa
     cy.get(':nth-child(2) > .radio > input').click()
     // Adicionando quantidade ao item
     cy.get('.input-mini').clear().type('250')
