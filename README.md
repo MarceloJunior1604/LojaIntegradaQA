@@ -18,4 +18,4 @@ Objetivo desse teste é validar se ao remover o cupom do carrinho o fluxo de fin
 
 # Como conifgurar e executar o projeto
  Para o projeto ser executado é necessário que o Node e o Cypress estejam instalado
- - Como instalar o Node [NodeJs](http://handlebarsjs.com/)
+ - Como instalar o Node [NodeJs](https://nodejs.org/en/)
