@@ -2,7 +2,7 @@ name: Regressivo - Scheduled
 
 on:
   schedule:
-    - cron: "*/60 * * * 1-5"
+    - crhoon: "*/60 * * * 1-5"
 
 jobs:
  regressivo:
